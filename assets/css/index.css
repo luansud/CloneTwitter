@@ -1,0 +1,380 @@
+* {
+    margin: 0;
+    font-family:Arial, Helvetica, sans-serif;
+}
+
+body{
+    background-color: white;
+    height: 100vh;
+}
+
+.container{
+    display: flex;
+}
+
+#left{
+    width: 25%;
+    border: 1px solid rgba(0, 0, 0, 0.1);
+}
+#center{
+    width: 45%;
+    border: 1px solid rgba(0, 0, 0, 0.1);
+}
+#right{
+    width: 30%;
+    border: 1px solid rgba(0, 0, 0, 0.1);
+    padding-right: 65px;
+}
+
+.left-inside{
+    margin-left: 15%;
+}
+
+.icons{
+    width: 30px;
+    padding: 15px;
+}
+
+.button_nav{
+    display: flex;
+    flex-direction: row;
+    border-radius: 30px;
+}
+
+.link_nav:hover{
+    background-color: rgb(228, 228, 228);
+}
+
+.link_nav{
+    text-decoration: none;
+    padding-right: 30px;
+    border-radius: 30px;
+    font-size: 24px;
+    color: black;
+    font-family:'Times New Roman', Times, serif;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+#buttonPostNav{
+    width: 80%;
+    border: 0px solid rgb(29, 155, 240);
+    border-radius: 50px;
+    height: 60px;
+    font-size: 19px;
+    background-color: rgb(29, 155, 240);
+    color: white;
+}
+
+#buttonPostNav:hover{
+    background-color: rgb(25, 138, 213);
+}
+
+#dotsNavProfile{
+    width: 25px;
+    margin-right: 20px;
+}
+
+.centerTopDiv{
+    display: flex;
+    justify-content: space-around;
+    flex-direction: row;
+    height: 60px;
+    border: 1px solid rgba(0, 0, 0, 0.1);
+}
+
+.centerTop{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+}
+
+.centerTop:hover{
+    background-color: rgb(228, 228, 228);
+}
+
+.centerTopText{
+    display: flex;
+    align-items: center;
+    height: 100%;
+    border-bottom: 8px solid rgb(29, 155, 240);
+    border-radius: 5px
+}
+
+
+.centerPostTop{
+    display: flex;
+    width: 100%;
+}
+
+#PostImageProfile{
+    width: 55px;
+    margin: 10px;
+    border-radius: 50px;
+}
+
+.centerText{
+    display: flex;
+    width: 85%;
+}
+
+.centerTextInput{
+    display: flex;
+    width: 100%;
+    border: 0px;
+    outline: none;
+}
+.centerTextInput:placeholder-shown{
+    font-size: 24px;
+    color: rgb(131, 129, 129);
+}
+
+.centerMiddle{
+    margin-left: 15.5%;
+    padding:3px 8px;
+    border: 0px;
+    width: 147px;
+    border: 0px;
+    border-radius: 30px;
+    color: rgb(29, 155, 240);
+}
+.centerMiddle:hover{
+    background-color: rgb(228, 228, 228);
+}
+
+hr{
+    width: 80%;
+    margin-left: 12%;
+    margin-top: 13px;
+    height: 0px;
+    color: rgba(0, 0, 0, 0.1);
+    border: 1px solid rgba(0, 0, 0, 0.1);
+
+}
+
+.centerPostBottom{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.centerIcons{
+    display: flex;
+    margin-left: 6%;
+    margin-top: 10px;
+}
+
+.IconsMiddle{
+    max-width: 25px;
+    min-width: 10px;
+    padding: 6px;
+}
+
+.IconsMiddle:hover{
+    background-color: rgb(228, 228, 228);
+    border-radius: 20px;
+}
+
+.centerButton{
+    margin-top: 10px;
+    margin-left: 30%;
+    padding-left: 10px;
+    padding-right: 10px;
+    background-color: rgb(29, 155, 240);
+    border: 15px solid #1d9bf0;
+    border-radius: 30px;
+
+}
+
+.centerButtonPost{
+    color: white;
+}
+
+.centerButton:hover{
+    background-color: rgb(112, 189, 240);
+    border: 15px solid rgb(112, 189, 240);
+}
+
+.showPosts{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 50px;
+    color: #1d9bf0;
+    margin-top: 10px;
+    font-size: 17px;
+    border: 1px solid rgba(0, 0, 0, 0.04);
+}
+
+.showPosts:hover{
+    background-color: rgb(243, 241, 241);
+}
+
+.postDiv:hover{
+    background-color: rgb(243, 241, 241);
+}
+
+.postTop{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.postProfile{
+    display: flex;
+    width: 55px;
+    margin-left: 2%;
+    margin-top: 1%;
+}
+
+.profileAndText{
+    flex-grow: 2;
+    margin-top: 8px;
+    margin-left: 8px;
+}
+.postTopNameHashtag{
+    display: flex;
+}
+.hashtagPost{
+    margin-left: 15px;
+}
+.postText{
+margin-top: 5px;
+}
+.postDots{
+    width: 30px;
+    margin-right: 15px;
+}
+
+.postDivImage{
+    display: flex;
+    width: 100%;
+    justify-content: center;
+}
+.postImage{
+    width: 80%;
+    margin-left: 3%;
+    margin-top: 10px;
+}
+
+
+.rightAside{
+    display: flex;
+    align-items: center;
+    margin: 5px 20px;
+    padding: 5px 20px;
+    background-color: rgb(247, 249, 249);
+    border-radius: 50px;
+}
+
+#searchImg{
+    width:30px;
+    margin-right: 10px;
+    opacity: 0.5;
+}
+
+.rightSearch{
+    width: 80%;
+}
+#searchBar{
+    width: 100%;
+    height: 35px;
+    font-size: 16px;
+    outline: none;
+    border: 0px;
+    background-color: rgb(247, 249, 249);
+}
+
+.rightSubscribeDiv{
+    margin: 18px 20px;
+    padding: 15px 20px;
+    background-color: rgb(247, 249, 249);
+    border-radius: 15px;
+}
+.rightTitle{
+    font-size: 24px;
+}
+#subscribeDescription{
+    margin-top: 12px;
+    color: rgb(65, 65, 65);
+    line-height: 21px;
+}
+#subscribeButton{
+    margin-top: 10px;
+    width: 115px;
+    border: 0px solid black;
+    color: white;
+    background-color: black;
+    border-radius: 20px;
+    height: 40px;
+    font-size: 17px;
+}
+
+.whotoFollow{
+    margin: 18px 20px;
+    padding: 15px 20px;
+    background-color: rgb(247, 249, 249);
+    border-radius: 15px;
+}
+
+.followSugest{
+    display: flex;
+    justify-content: space-between;
+    margin-top: 20px;
+    align-items: center;
+}
+
+.imgProfile{
+    width: 50px;
+}
+.followSugestBlock{
+    flex-grow: 2;
+    margin-left: 7px;
+}
+.profileHastag{
+    margin-top: 2px;
+    color: rgb(100, 99, 99);
+}
+
+.followButton{
+    background-color: black;
+    color: white;
+    font-size: 14px;
+    width: 80px;
+    height: 35px;
+    border: 0px solid black;
+    border-radius: 30px;
+}
+
+.followButton:hover, #subscribeButton:hover{
+    background-color: rgb(48, 48, 48);
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* *{outline:}
+
