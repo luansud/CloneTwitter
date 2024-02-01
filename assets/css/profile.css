@@ -1,0 +1,269 @@
+* {
+    margin: 0;
+    font-family:Arial, Helvetica, sans-serif;
+}
+
+body{
+    background-color: white;
+    height: 100vh;
+}
+
+.container{
+    display: flex;
+}
+
+#left{
+    width: 25%;
+    border: 1px solid rgba(0, 0, 0, 0.1);
+}
+#center{
+    width: 45%;
+    border: 1px solid rgba(0, 0, 0, 0.1);
+}
+#right{
+    width: 30%;
+    border: 1px solid rgba(0, 0, 0, 0.1);
+    padding-right: 65px;
+}
+
+.left-inside{
+    margin-left: 15%;
+}
+
+.icons{
+    width: 30px;
+    padding: 15px;
+}
+
+.button_nav{
+    display: flex;
+    flex-direction: row;
+    border-radius: 30px;
+}
+
+.link_nav:hover{
+    background-color: rgb(228, 228, 228);
+}
+
+.link_nav{
+    text-decoration: none;
+    padding-right: 30px;
+    border-radius: 30px;
+    font-size: 24px;
+    color: black;
+    font-family:'Times New Roman', Times, serif;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+#buttonPostNav{
+    width: 80%;
+    border: 0px solid rgb(29, 155, 240);
+    border-radius: 50px;
+    height: 60px;
+    font-size: 19px;
+    background-color: rgb(29, 155, 240);
+    color: white;
+}
+
+#buttonPostNav:hover{
+    background-color: rgb(25, 138, 213);
+}
+
+#dotsNavProfile{
+    width: 25px;
+    margin-right: 20px;
+}
+
+
+
+
+
+
+
+
+
+
+
+.comebackTop{
+    display: flex;
+    align-items: center;
+    margin-top: 8px;
+}
+
+.arrowComeback{
+    width: 15px;
+    margin-left: 15px;
+}
+.namePosts{
+    margin-left: 25px;
+}
+
+.quantityPosts{
+    font-size: 14px;
+    color: #CFD9DE;
+    margin-top: 5px;
+}
+
+.boxTop{
+    position: relative;
+}
+
+.profilePicture{
+    width: 130px;
+    border-radius: 50%;
+    border: 2px solid white;
+    position: absolute;
+    z-index: 1;
+    margin-top: -70px;
+    margin-left: 30px;
+}
+
+.grayblock{
+    width: 100%;
+    height: 200px;
+    background-color: rgb(191, 188, 188);
+    z-index: 0;
+}
+
+.editProfile{
+    float: right;
+    font-size: 16px;
+    margin: 10px 20px;
+    padding: 15px 25px;
+    border: 1px solid #edf1f3;
+    border-radius: 20px;
+}
+.editProfile:hover{
+    background-color: #ebeced;
+    border: 0px solid black;
+}
+
+
+
+
+
+
+
+
+
+
+
+.rightAside{
+    display: flex;
+    align-items: center;
+    margin: 5px 20px;
+    padding: 5px 20px;
+    background-color: rgb(247, 249, 249);
+    border-radius: 50px;
+}
+
+#searchImg{
+    width:30px;
+    margin-right: 10px;
+    opacity: 0.5;
+}
+
+.rightSearch{
+    width: 80%;
+}
+#searchBar{
+    width: 100%;
+    height: 35px;
+    font-size: 16px;
+    outline: none;
+    border: 0px;
+    background-color: rgb(247, 249, 249);
+}
+
+.rightSubscribeDiv{
+    margin: 18px 20px;
+    padding: 15px 20px;
+    background-color: rgb(247, 249, 249);
+    border-radius: 15px;
+}
+.rightTitle{
+    font-size: 24px;
+}
+#subscribeDescription{
+    margin-top: 12px;
+    color: rgb(65, 65, 65);
+    line-height: 21px;
+}
+#subscribeButton{
+    margin-top: 10px;
+    width: 115px;
+    border: 0px solid black;
+    color: white;
+    background-color: black;
+    border-radius: 20px;
+    height: 40px;
+    font-size: 17px;
+}
+
+.whotoFollow{
+    margin: 18px 20px;
+    padding: 15px 20px;
+    background-color: rgb(247, 249, 249);
+    border-radius: 15px;
+}
+
+.followSugest{
+    display: flex;
+    justify-content: space-between;
+    margin-top: 20px;
+    align-items: center;
+}
+
+.imgProfile{
+    width: 50px;
+}
+.followSugestBlock{
+    flex-grow: 2;
+    margin-left: 7px;
+}
+.profileHastag{
+    margin-top: 2px;
+    color: rgb(100, 99, 99);
+}
+
+.followButton{
+    background-color: black;
+    color: white;
+    font-size: 14px;
+    width: 80px;
+    height: 35px;
+    border: 0px solid black;
+    border-radius: 30px;
+}
+
+.followButton:hover, #subscribeButton:hover{
+    background-color: rgb(48, 48, 48);
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* *{outline:}
+
