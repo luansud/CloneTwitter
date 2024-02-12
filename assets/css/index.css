@@ -1,12 +1,17 @@
 * {
     margin: 0;
     font-family:Arial, Helvetica, sans-serif;
-    
+}
+:root{
+    --font:black;
+    --fundo:white;
+    --fundoDivs: #f2f0f0;
 }
 
-body{
-    background-color: white;
+#corpo{
+    background-color: var(--fundo);
     height: 100vh;
+    color: var(--font);
 }
 
 .container{
@@ -57,7 +62,7 @@ a{
     padding-right: 30px;
     border-radius: 30px;
     font-size: 24px;
-    color: black;
+    color: var(--font);
     font-family:'Times New Roman', Times, serif;
     display: flex;
     flex-direction: row;
@@ -71,7 +76,7 @@ a{
     height: 60px;
     font-size: 19px;
     background-color: rgb(29, 155, 240);
-    color: white;
+    color: var(--fundo);
     margin-bottom: 30px;
 }
 
@@ -133,6 +138,7 @@ a{
 .centerText{
     display: flex;
     width: 85%;
+    background-color: var(--fundo);
 }
 
 .centerTextInput{
@@ -140,6 +146,7 @@ a{
     width: 100%;
     border: 0px;
     outline: none;
+    background-color: var(--fundo);
 }
 .centerTextInput:placeholder-shown{
     font-size: 24px;
@@ -191,6 +198,8 @@ hr{
     background-color: rgb(228, 228, 228);
     border-radius: 20px;
 }
+
+
 
 .centerButton{
     margin-top: 10px;
@@ -281,7 +290,7 @@ margin-top: 5px;
     align-items: center;
     margin: 5px 20px;
     padding: 5px 20px;
-    background-color: rgb(247, 249, 249);
+    background-color: var(--fundoDivs);
     border-radius: 50px;
 }
 
@@ -300,12 +309,12 @@ margin-top: 5px;
     font-size: 16px;
     outline: none;
     border: 0px;
-    background-color: rgb(247, 249, 249);
+    background-color: var(--fundoDivs);
 }
 
 .rightBoxDiv{
     margin: 18px 20px;
-    background-color: rgb(247, 249, 249);
+    background-color: var(--fundoDivs);
     border-radius: 15px;
 }
 .rightBoxInBox{
@@ -332,8 +341,8 @@ margin-top: 5px;
     margin: 10px;
     width: 115px;
     border: 0px solid black;
-    color: white;
-    background-color: black;
+    color: var(--fundo);
+    background-color: var(--font);
     border-radius: 20px;
     height: 40px;
     font-size: 17px;
@@ -351,8 +360,8 @@ margin-top: 5px;
 }
 
 .followButton{
-    background-color: black;
-    color: white;
+    background-color: var(--font);
+    color: var(--fundo);
     font-size: 14px;
     width: 80px;
     height: 35px;
@@ -364,7 +373,25 @@ margin-top: 5px;
     background-color: rgb(48, 48, 48);
 }
 
+#buttonDark{
+    position: absolute;
+    top: 0.5rem;
+    right: 0.5rem;
+    cursor: pointer;
+}
+#darkmode{
+    width: 50px;
+}
 
+#buttonLight{
+    position: absolute;
+    top: 2.0rem;
+    right: 0.5rem;
+    cursor: pointer;
+}
+#lightmode{
+    width: 50px;
+}
 
 
 
