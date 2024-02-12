@@ -1,6 +1,7 @@
 * {
     margin: 0;
     font-family:Arial, Helvetica, sans-serif;
+    
 }
 
 body{
@@ -15,8 +16,10 @@ body{
 #left{
     width: 25%;
     border: 1px solid rgba(0, 0, 0, 0.1);
+    position: fixed;
 }
 #center{
+    margin-left: 25%;
     width: 45%;
     border: 1px solid rgba(0, 0, 0, 0.1);
 }
@@ -24,6 +27,10 @@ body{
     width: 30%;
     border: 1px solid rgba(0, 0, 0, 0.1);
     padding-right: 65px;
+}
+
+a{
+    cursor: pointer;
 }
 
 .left-inside{
@@ -65,16 +72,24 @@ body{
     font-size: 19px;
     background-color: rgb(29, 155, 240);
     color: white;
+    margin-bottom: 30px;
 }
 
 #buttonPostNav:hover{
     background-color: rgb(25, 138, 213);
 }
 
-#dotsNavProfile{
+.dots{
     width: 25px;
     margin-right: 20px;
+    padding: 5px;
 }
+
+.dots:hover{
+    background-color: rgb(232, 235, 235);
+    border-radius: 50px;
+}
+
 
 .centerTopDiv{
     display: flex;
@@ -288,22 +303,33 @@ margin-top: 5px;
     background-color: rgb(247, 249, 249);
 }
 
-.rightSubscribeDiv{
+.rightBoxDiv{
     margin: 18px 20px;
-    padding: 15px 20px;
     background-color: rgb(247, 249, 249);
     border-radius: 15px;
 }
+.rightBoxInBox{
+    display: flex;
+    justify-content: space-between;
+    margin-top: 10px;
+    padding: 5px 15px;
+    align-items: center;
+}
+.rightBoxInBox:hover{
+    background-color:rgb(229, 230, 231);
+}
 .rightTitle{
     font-size: 24px;
+    font-weight: bold;
+    padding: 15px 0 0 15px ;
 }
 #subscribeDescription{
-    margin-top: 12px;
+    margin: 10px 0px 0px 15px;
     color: rgb(65, 65, 65);
     line-height: 21px;
 }
 #subscribeButton{
-    margin-top: 10px;
+    margin: 10px;
     width: 115px;
     border: 0px solid black;
     color: white;
@@ -312,21 +338,6 @@ margin-top: 5px;
     height: 40px;
     font-size: 17px;
 }
-
-.whotoFollow{
-    margin: 18px 20px;
-    padding: 15px 20px;
-    background-color: rgb(247, 249, 249);
-    border-radius: 15px;
-}
-
-.followSugest{
-    display: flex;
-    justify-content: space-between;
-    margin-top: 20px;
-    align-items: center;
-}
-
 .imgProfile{
     width: 50px;
 }
@@ -351,8 +362,10 @@ margin-top: 5px;
 
 .followButton:hover, #subscribeButton:hover{
     background-color: rgb(48, 48, 48);
-
 }
+
+
+
 
 
 
