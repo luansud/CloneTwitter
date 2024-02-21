@@ -1,7 +1,6 @@
 * {
     margin: 0;
     font-family:Arial, Helvetica, sans-serif;
-    
 }
 
 body{
@@ -50,6 +49,7 @@ a{
 
 .link_nav:hover{
     background-color: rgb(228, 228, 228);
+    cursor: pointer;
 }
 
 .link_nav{
@@ -77,26 +77,29 @@ a{
 
 #buttonPostNav:hover{
     background-color: rgb(25, 138, 213);
+    cursor: pointer;
+
 }
 
 .dots{
     width: 25px;
     margin-right: 20px;
-    padding: 5px;
+    padding: 2px;
 }
 
 .dots:hover{
     background-color: rgb(232, 235, 235);
     border-radius: 50px;
-}
+    cursor: pointer;
 
+}
 
 .centerTopDiv{
     display: flex;
     justify-content: space-around;
     flex-direction: row;
     height: 60px;
-    border: 1px solid rgba(0, 0, 0, 0.1);
+    border: 12 solid rgba(0, 0, 0, 0.1);
 }
 
 .centerTop{
@@ -106,8 +109,30 @@ a{
     width: 100%;
 }
 
+.centerTopEngine{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#engine_icon:hover{
+    background-color: rgb(228, 228, 228);
+    cursor: pointer;
+
+}
+
+#engine_icon{
+    width: 23px;
+    margin: 10px;
+    padding: 10px;
+    border: 0px solid black;
+    border-radius: 50px;
+}
+
 .centerTop:hover{
     background-color: rgb(228, 228, 228);
+    cursor: pointer;
+
 }
 
 .centerTopText{
@@ -157,6 +182,8 @@ a{
 }
 .centerMiddle:hover{
     background-color: rgb(228, 228, 228);
+    cursor: pointer;
+
 }
 
 hr{
@@ -165,7 +192,7 @@ hr{
     margin-top: 13px;
     height: 0px;
     color: rgba(0, 0, 0, 0.1);
-    border: 1px solid rgba(0, 0, 0, 0.1);
+    border: 12 solid rgba(0, 0, 0, 0.1);
 
 }
 
@@ -190,6 +217,8 @@ hr{
 .IconsMiddle:hover{
     background-color: rgb(228, 228, 228);
     border-radius: 20px;
+    cursor: pointer;
+
 }
 
 .centerButton{
@@ -210,6 +239,8 @@ hr{
 .centerButton:hover{
     background-color: rgb(112, 189, 240);
     border: 15px solid rgb(112, 189, 240);
+    cursor: pointer;
+
 }
 
 .showPosts{
@@ -221,15 +252,19 @@ hr{
     color: #1d9bf0;
     margin-top: 10px;
     font-size: 17px;
-    border: 1px solid rgba(0, 0, 0, 0.04);
+    border: 12 solid rgba(0, 0, 0, 0.04);
 }
 
 .showPosts:hover{
     background-color: rgb(243, 241, 241);
+    cursor: pointer;
+
 }
 
 .postDiv:hover{
     background-color: rgb(243, 241, 241);
+    cursor: pointer;
+
 }
 
 .postTop{
@@ -311,17 +346,43 @@ margin-top: 5px;
 .rightBoxInBox{
     display: flex;
     justify-content: space-between;
-    margin-top: 10px;
-    padding: 5px 15px;
+    padding: 5px 5px 10px 10px;
     align-items: center;
 }
-.rightBoxInBox:hover{
+.rightBoxInBox:hover, .trendBox:hover{
     background-color:rgb(229, 230, 231);
+    cursor: pointer;
+
 }
+
+.nameTrend{
+    padding-left: 15px;
+    padding-bottom: 5px;
+    font-size: 18px;
+}
+
+.trendFirstLineText{
+    font-size: 15px;
+    color:rgb(125, 125, 125);
+    margin-left: 15px;
+}
+
+.rightBoxTrend{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 5px;
+}
+.trendBox{
+    padding-top: 3px;
+    padding-bottom: 8px;
+}
+
+
 .rightTitle{
     font-size: 24px;
     font-weight: bold;
-    padding: 15px 0 0 15px ;
+    padding: 15px 0 10px 15px ;
 }
 #subscribeDescription{
     margin: 10px 0px 0px 15px;
@@ -362,6 +423,7 @@ margin-top: 5px;
 
 .followButton:hover, #subscribeButton:hover{
     background-color: rgb(48, 48, 48);
+    cursor: pointer;
 }
 
 
