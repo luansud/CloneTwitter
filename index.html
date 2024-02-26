@@ -13,13 +13,13 @@
                 <nav>
                     <div><a href=""><img src="./assets/img/icons/x.png" alt="" class="icons"></a></div>
                     <div class="button_nav"><a class="link_nav" href="./index.html"><img src="./assets/img/icons/home.png" alt="" class="icons">Home</a></div>
-                    <div class="button_nav"><a class="link_nav" href=""><img src="./assets/img/icons/explorer.png" alt="" class="icons">Explore</a></div>
-                    <div class="button_nav"><a class="link_nav" href=""><img src="./assets/img/icons/bell.png" alt="" class="icons">Notifications</a></div>
-                    <div class="button_nav"><a class="link_nav" href=""><img src="./assets/img/icons/email.png" alt="" class="icons">Messages</a></div>
-                    <div class="button_nav"><a class="link_nav" href=""><img src="./assets/img/icons/page.png" alt="" class="icons">Lists</a></div>
-                    <div class="button_nav"><a class="link_nav" href=""><img src="./assets/img/icons/x.png" alt="" class="icons">Premium</a></div>
-                    <div class="button_nav"><a class="link_nav" href="./profile.html"><img src="./assets/img/icons/profile.png" alt="" class="icons">Profile</a></div>
-                    <div class="button_nav"><a class="link_nav" href=""><img src="./assets/img/icons/3dots.png" alt="" class="icons">More</a></div>
+                    <div class="button_nav"><a class="link_nav" href="/pages/explore.html"><img src="./assets/img/icons/explorer.png" alt="" class="icons">Explore</a></div>
+                    <div class="button_nav"><a class="link_nav" href="/pages/notifications.html"><img src="./assets/img/icons/bell.png" alt="" class="icons">Notifications</a></div>
+                    <div class="button_nav"><a class="link_nav" href="/pages/messages.html"><img src="./assets/img/icons/email.png" alt="" class="icons">Messages</a></div>
+                    <div class="button_nav"><a class="link_nav" href="/pages/lists.html"><img src="./assets/img/icons/page.png" alt="" class="icons">Lists</a></div>
+                    <div class="button_nav"><a class="link_nav" href="/pages/premium.html"><img src="./assets/img/icons/x.png" alt="" class="icons">Premium</a></div>
+                    <div class="button_nav"><a class="link_nav" href="/pages/profile.html"><img src="./assets/img/icons/profile.png" alt="" class="icons">Profile</a></div>
+                    <div class="button_nav"><a class="link_nav" href="/pages/more.html"><img src="./assets/img/icons/3dots.png" alt="" class="icons">More</a></div>
                     <button id="buttonPostNav"><b>Post</b></button>
                 </nav>
 
@@ -42,9 +42,13 @@
                 <main>
                     <div class="centerTopDiv">
                         <div class="centerTop">
-                            <div class="centerTopText"><b>For you</b></div>
+                            <div id="forYouDiv" class="centerTopTextLine">For you</div>
                         </div>
-                        <div class="centerTop"><b>Following</b></div>    
+
+                        <div class="centerTop">
+                            <div id="followDiv" class="centerTopText">Following</div>    
+                        </div>
+
                         <div class="centerTopEngine"><img id="engine_icon" src="/assets/img/icons/Background.png" alt=""></div>    
                     </div>
 
@@ -280,6 +284,6 @@
 
     </div>
 
-    <script src="index.js" ></script>
+    <script src="/assets/script/index.js" ></script>
 </body>
 </html>

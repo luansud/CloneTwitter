@@ -135,12 +135,21 @@ a{
 
 }
 
+.centerTop{
+    font-weight: bold;
+}
+
 .centerTopText{
     display: flex;
     align-items: center;
     height: 100%;
+}
+.centerTopTextLine{
+    display: flex;
+    align-items: center;
+    height: 100%;
     border-bottom: 8px solid rgb(29, 155, 240);
-    border-radius: 5px
+    border-radius: 5px;
 }
 
 
