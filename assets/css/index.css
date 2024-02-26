@@ -102,12 +102,7 @@ a{
     border: 12 solid rgba(0, 0, 0, 0.1);
 }
 
-.centerTop{
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    width: 100%;
-}
+
 
 .centerTopEngine{
     display: flex;
@@ -129,14 +124,21 @@ a{
     border-radius: 50px;
 }
 
-.centerTop:hover{
+.centerTopLeft:hover, .centerTopRight:hover{
     background-color: rgb(228, 228, 228);
     cursor: pointer;
 
 }
 
-.centerTop{
+.centerTopRight,.centerTopLeft{
     font-weight: bold;
+}
+
+.centerTopRight, .centerTopLeft{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
 }
 
 .centerTopText{
@@ -151,7 +153,6 @@ a{
     border-bottom: 8px solid rgb(29, 155, 240);
     border-radius: 5px;
 }
-
 
 .centerPostTop{
     display: flex;

@@ -1,5 +1,7 @@
 const forButton = document.getElementById("forYouDiv");
 const followButton = document.getElementById("followDiv");
+const divFol = document.querySelector(".centerTopRight");
+const divFor = document.querySelector(".centerTopLeft");
 
 function addBorderBlueFollow() {
     forButton.style.borderBottom = "0px solid black";
@@ -16,3 +18,5 @@ function addBorderBlueForYou() {
 
 followButton.addEventListener("click", addBorderBlueFollow);
 forButton.addEventListener("click", addBorderBlueForYou);
+divFor.addEventListener("click",addBorderBlueForYou);
+divFol.addEventListener("click",addBorderBlueFollow);
