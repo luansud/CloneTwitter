@@ -4,10 +4,12 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Clone Twitter</title>
-    <link rel="stylesheet" href="./assets/css/index.css">
+    <link rel="stylesheet" href="/assets/css/index.css">
 </head>
 <body>
     <div class="container">
+
+
         <div id="left">
             <div class="left-inside">
                 <nav>
@@ -52,7 +54,6 @@
                         <div class="centerTopEngine"><img id="engine_icon" src="/assets/img/icons/Background.png" alt=""></div>    
                     </div>
 
-                    
 
                     <div class="centerPost">
                         <div class="centerPostTop">
@@ -60,7 +61,7 @@
                                 <a href=""><img id="PostImageProfile" src="./assets/img/icons/dogProfile.jpg" alt=""></a>
                             </div>
                             <div class="centerText">
-                                <input placeholder="What is happening?!" class="centerTextInput" type="text">
+                                <input id="inputPost" placeholder="What is happening?!" class="centerTextInput" type="text">
                             </div>
                         </div>
                         
@@ -78,7 +79,7 @@
                                 <div><img class="IconsMiddle" src="./assets/img/icons/localização.png" alt=""></div>
 
                             </div>
-                            <div class="centerButton">
+                            <div id="postButton" class="centerButton" onclick="postText()">
                                 <div class="centerButtonPost">Post</div>
                             </div>
                         </div>
@@ -89,7 +90,11 @@
                         Show 100 posts
                     </div>
 
-                    <div class="postDiv">
+                    
+                    <section>
+                        
+                    </section>
+                    <div id="postDiv" class="postDiv">
                         <div class="postTop">
                             <img src="./assets/img/icons/profile.png" alt="" class="postProfile">
                             <div class="profileAndText">
@@ -97,7 +102,7 @@
                                     <b>Profile 1</b>
                                     <p class="hashtagPost">@Profile1 - 1h</p>
                                 </div>
-                                <div class="postText">
+                                <div id="userPost" class="postText">
                                     Example of how the test is gonna work!
                                 </div>
                             </div>
@@ -105,14 +110,44 @@
                         </div>
 
                         <div class="postDivImage">
-                            <img class="postImage" src="./assets/img/Christ.jpg" alt="">
+                            <img class="postImage" src="" alt="">
                         </div>
-                    </div>
 
+
+                        <div class="optionsDiv">
+                            <div class="options">
+                                <img class="optionImg" src="/assets/img/icons/talkBallon.png" alt="Talk Ballon Icon">
+                                <label id="optionDescTalk" class="optionDesc">7 K</label>
+                            </div>
+
+                            <div class="options">
+                                <img class="optionImg" src="/assets/img/icons/rePost.png" alt="Re-Post Icon">
+                                <label id="optionDescPost" class="optionDesc">22 K</label>
+                            </div>
+
+                            <div class="options">
+                                <img class="optionImg" src="/assets/img/icons/Heart.png" alt="Heart Icon">
+                                <label id="optionDescHeart" class="optionDesc">226 K</label>
+                            </div>
+
+                            <div class="options">
+                                <img class="optionImg" src="/assets/img/icons/Statistic bar.png" alt="Statistic Bar Icon">
+                                <label id="optionDescStat" class="optionDesc">28 M</label>
+                            </div>
+
+                            <div class="options">
+                                <img class="optionImg" src="/assets/img/icons/Salvar.png" alt="Save Icon">
+                                <img class="optionImg" src="/assets/img/icons/Upload.png" alt="Upload Icon">
+                            </div>
+                        </div>
+                   </div>
+                    
 
                 </main>
             </div>
         </div>
+
+
 
 
 
@@ -123,7 +158,7 @@
                         <img id="searchImg" src="./assets/img/icons/magnifying_glass.png" alt="">
                     </div>
                     <div class="rightSearch">
-                        <input placeholder="Search" type="text" name="searchBar" id="searchBar">
+                        <input onfocus="addBorderSearchDiv()" onblur="offBorderSearchDiv()" placeholder="Search" type="text" name="searchBar" id="searchBar">
                     </div>
                 </div>
                 

@@ -91,7 +91,6 @@ a{
     background-color: rgb(232, 235, 235);
     border-radius: 50px;
     cursor: pointer;
-
 }
 
 .centerTopDiv{
@@ -268,13 +267,15 @@ hr{
 .showPosts:hover{
     background-color: rgb(243, 241, 241);
     cursor: pointer;
-
 }
 
-.postDiv:hover{
+#postDiv{
+    display: none;
+}
+
+#postDiv:hover{
     background-color: rgb(243, 241, 241);
     cursor: pointer;
-
 }
 
 .postTop{
@@ -306,7 +307,13 @@ margin-top: 5px;
 }
 .postDots{
     width: 30px;
+    padding: 5px;
     margin-right: 15px;
+}
+.postDots:hover{
+    background-color: rgb(218, 230, 230);
+    border-radius: 100px;
+    cursor: pointer;
 }
 
 .postDivImage{
@@ -319,6 +326,48 @@ margin-top: 5px;
     margin-left: 3%;
     margin-top: 10px;
 }
+
+.optionsDiv{
+    display: flex;
+    justify-content: space-between;
+    margin: 10px;
+    padding-bottom: 10px;
+}
+.options{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 1px;
+}
+
+.optionImg{
+    width: 20px;
+    padding: 5px;
+}
+.optionImg:hover{
+    background-color: rgb(215, 231, 252);
+    cursor: pointer;
+    border-radius: 50px;
+}
+.optionDesc{
+    color: rgb(106, 106, 106);
+    font-size: 14px;
+}
+.options:hover{
+    color: rgb(215, 231, 252);
+}
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 .rightAside{
