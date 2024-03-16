@@ -19,11 +19,11 @@ body{
 }
 #center{
     margin-left: 25%;
-    width: 45%;
+    width: 47%;
     border: 1px solid rgba(0, 0, 0, 0.1);
 }
 #right{
-    width: 30%;
+    width: 28%;
     border: 1px solid rgba(0, 0, 0, 0.1);
     padding-right: 65px;
 }
@@ -192,7 +192,6 @@ a{
 .centerMiddle:hover{
     background-color: rgb(228, 228, 228);
     cursor: pointer;
-
 }
 
 hr{
@@ -267,10 +266,6 @@ hr{
 .showPosts:hover{
     background-color: rgb(243, 241, 241);
     cursor: pointer;
-}
-
-#postDiv{
-    display: none;
 }
 
 #postDiv:hover{
@@ -405,7 +400,7 @@ margin-top: 5px;
 .rightBoxInBox{
     display: flex;
     justify-content: space-between;
-    padding: 5px 5px 10px 10px;
+    padding: 5px 20px 10px 20px;
     align-items: center;
 }
 .rightBoxInBox:hover, .trendBox:hover{
@@ -413,7 +408,6 @@ margin-top: 5px;
     cursor: pointer;
 
 }
-
 .nameTrend{
     padding-left: 15px;
     padding-bottom: 5px;
