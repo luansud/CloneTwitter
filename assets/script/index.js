@@ -51,8 +51,7 @@ function postText() {
                             <img class="postDots" src="./assets/img/icons/3dotsNoCircle.png" alt="">
                         </div>
 
-                        <div class="postDivImage">
-                            <img class="postImage" src="" alt="">
+                        <div id="postDivImage" class="imageDivPost">
                         </div>
 
 
@@ -91,12 +90,29 @@ function postText() {
     console.log(postButton);
     console.log(userPost);
     console.log(postDiv);
+
+    imageContainer.innerHTML = ''; // Limpa o container antes de adicionar novas imagens
+    let postDivImage = document.getElementById("postDivImage")
+    for(i=0; i<srcArray.length;i++){
+        var postImgUrl = srcArray[i];
+        var postImg = `<img class="imagePost" src="${postImgUrl}">`;
+
+        // Adiciona a imagem ao container
+        postDivImage.innerHTML = postDivImage.innerHTML+postImg;
+    }
+
+    srcArray = []
 }
+
 
 document.getElementById('imgUpIcon').addEventListener('click', function(e) {
     e.preventDefault(); // Previne o comportamento padrão da imagem
     document.getElementById('imageInput').click(); // Aciona o evento de clique do input oculto
 });
+
+
+    // Cria um array para guardar as src(urls)
+    var srcArray = [];
 
 document.getElementById('imageInput').addEventListener('change', function(e) {
     // Obtém os arquivos selecionados
@@ -105,7 +121,7 @@ document.getElementById('imageInput').addEventListener('change', function(e) {
 
     // Obtém o elemento de container para as imagens
     var container = document.getElementById('imageContainer');
-    container.innerHTML = ''; // Limpa o container antes de adicionar novas imagens
+
 
     // Itera sobre os arquivos selecionados
     for (var i = 0; i < files.length; i++) {
@@ -117,14 +133,17 @@ document.getElementById('imageInput').addEventListener('change', function(e) {
         // Cria um novo elemento de imagem para cada arquivo
         var img = document.createElement('img');
         img.src = url;
-        img.style.width = '100px'; // Define a largura da imagem
+        img.style.width = '30%'; // Define a largura da imagem
         img.style.height = 'auto'; // Mantém a proporção da imagem
-        img.style.margin = '5px'; // Adiciona uma margem entre as imagens
+        img.style.flexGrow = '1'; 
+        img.style.objectFit = 'cover';
 
         // Adiciona a imagem ao container
         container.appendChild(img);
+        srcArray.push(img.src)
     }
 
     // Opcional: Limpa o input após a seleção para permitir uma nova seleção
     e.target.value = '';
+    
 });
