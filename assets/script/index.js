@@ -92,3 +92,39 @@ function postText() {
     console.log(userPost);
     console.log(postDiv);
 }
+
+document.getElementById('imgUpIcon').addEventListener('click', function(e) {
+    e.preventDefault(); // Previne o comportamento padrão da imagem
+    document.getElementById('imageInput').click(); // Aciona o evento de clique do input oculto
+});
+
+document.getElementById('imageInput').addEventListener('change', function(e) {
+    // Obtém os arquivos selecionados
+    var files = e.target.files;
+    if (!files.length) return; // Se nenhum arquivo foi selecionado, retorna
+
+    // Obtém o elemento de container para as imagens
+    var container = document.getElementById('imageContainer');
+    container.innerHTML = ''; // Limpa o container antes de adicionar novas imagens
+
+    // Itera sobre os arquivos selecionados
+    for (var i = 0; i < files.length; i++) {
+        var file = files[i];
+
+        // Cria um URL de objeto para o arquivo selecionado
+        var url = URL.createObjectURL(file);
+
+        // Cria um novo elemento de imagem para cada arquivo
+        var img = document.createElement('img');
+        img.src = url;
+        img.style.width = '100px'; // Define a largura da imagem
+        img.style.height = 'auto'; // Mantém a proporção da imagem
+        img.style.margin = '5px'; // Adiciona uma margem entre as imagens
+
+        // Adiciona a imagem ao container
+        container.appendChild(img);
+    }
+
+    // Opcional: Limpa o input após a seleção para permitir uma nova seleção
+    e.target.value = '';
+});
