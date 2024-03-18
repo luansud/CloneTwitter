@@ -31,7 +31,6 @@ function offBorderSearchDiv(){
     searchDiv.style.border = "0px solid #fff";
 }
 
-
 // CREATING POST SCRIPT
 function postText() { 
     let inputPost = document.getElementById("inputPost");
@@ -93,6 +92,3 @@ function postText() {
     console.log(userPost);
     console.log(postDiv);
 }
-
-
-

@@ -180,6 +180,29 @@ a{
     color: rgb(131, 129, 129);
 }
 
+.imagePost{
+    width: 30%;
+    object-fit: cover; 
+    flex-grow: 1;  
+}
+.imageDivPost{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap:wrap;
+    gap: 5px;
+    padding: 20px;
+}
+#imageInput{
+    display: none;
+}
+
+
+
+
+
+
+
 .centerMiddle{
     margin-left: 15.5%;
     padding:3px 8px;
