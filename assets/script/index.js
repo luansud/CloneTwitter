@@ -38,7 +38,7 @@ function postText() {
     const postDiv = `
     <div id="postDiv" class="postDiv">
                         <div class="postTop">
-                            <img src="/assets/img/Myphoto.jpeg" alt="" class="postProfile">
+                            <img src="assets/img/Myphoto.jpeg" alt="" class="postProfile">
                             <div class="profileAndText">
                                 <div class="postTopNameHashtag">
                                     <b>Luã Felizola</b>
@@ -55,28 +55,28 @@ function postText() {
 
                         <div class="optionsDiv">
                             <div class="options">
-                                <img class="optionImg" src="/assets/img/icons/talkBallon.png" alt="Talk Ballon Icon">
+                                <img class="optionImg" src="assets/img/icons/talkBallon.png" alt="Talk Ballon Icon">
                                 <label id="optionDescTalk" class="optionDesc">0</label>
                             </div>
 
                             <div class="options">
-                                <img class="optionImg" src="/assets/img/icons/rePost.png" alt="Re-Post Icon">
+                                <img class="optionImg" src="assets/img/icons/rePost.png" alt="Re-Post Icon">
                                 <label id="optionDescPost" class="optionDesc">0</label>
                             </div>
 
                             <div class="options">
-                                <img class="optionImg" src="/assets/img/icons/Heart.png" alt="Heart Icon">
+                                <img class="optionImg" src="assets/img/icons/Heart.png" alt="Heart Icon">
                                 <label id="optionDescHeart" class="optionDesc">0</label>
                             </div>
 
                             <div class="options">
-                                <img class="optionImg" src="/assets/img/icons/Statistic bar.png" alt="Statistic Bar Icon">
+                                <img class="optionImg" src="assets/img/icons/Statistic bar.png" alt="Statistic Bar Icon">
                                 <label id="optionDescStat" class="optionDesc">0</label>
                             </div>
 
                             <div class="options">
-                                <img class="optionImg" src="/assets/img/icons/Salvar.png" alt="Save Icon">
-                                <img class="optionImg" src="/assets/img/icons/Upload.png" alt="Upload Icon">
+                                <img class="optionImg" src="assets/img/icons/Salvar.png" alt="Save Icon">
+                                <img class="optionImg" src="assets/img/icons/Upload.png" alt="Upload Icon">
                             </div>
                         </div>
                    </div>
