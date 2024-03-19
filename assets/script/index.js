@@ -38,11 +38,11 @@ function postText() {
     const postDiv = `
     <div id="postDiv" class="postDiv">
                         <div class="postTop">
-                            <img src="./assets/img/icons/profile.png" alt="" class="postProfile">
+                            <img src="/assets/img/Myphoto.jpeg" alt="" class="postProfile">
                             <div class="profileAndText">
                                 <div class="postTopNameHashtag">
-                                    <b>Profile 1</b>
-                                    <p class="hashtagPost">@Profile1 - 1h</p>
+                                    <b>Luã Felizola</b>
+                                    <p class="hashtagPost">@LuanSoares - 1h</p>
                                 </div>
                                 <div id="userPost" class="postText">
                                     ${inputPost.value}
@@ -51,29 +51,27 @@ function postText() {
                             <img class="postDots" src="./assets/img/icons/3dotsNoCircle.png" alt="">
                         </div>
 
-                        <div id="postDivImage" class="imageDivPost">
-                        </div>
-
+                        <div id="postDivImage" class="imageDivPost" style="display: none;"></div>
 
                         <div class="optionsDiv">
                             <div class="options">
                                 <img class="optionImg" src="/assets/img/icons/talkBallon.png" alt="Talk Ballon Icon">
-                                <label id="optionDescTalk" class="optionDesc">7 K</label>
+                                <label id="optionDescTalk" class="optionDesc">0</label>
                             </div>
 
                             <div class="options">
                                 <img class="optionImg" src="/assets/img/icons/rePost.png" alt="Re-Post Icon">
-                                <label id="optionDescPost" class="optionDesc">22 K</label>
+                                <label id="optionDescPost" class="optionDesc">0</label>
                             </div>
 
                             <div class="options">
                                 <img class="optionImg" src="/assets/img/icons/Heart.png" alt="Heart Icon">
-                                <label id="optionDescHeart" class="optionDesc">226 K</label>
+                                <label id="optionDescHeart" class="optionDesc">0</label>
                             </div>
 
                             <div class="options">
                                 <img class="optionImg" src="/assets/img/icons/Statistic bar.png" alt="Statistic Bar Icon">
-                                <label id="optionDescStat" class="optionDesc">28 M</label>
+                                <label id="optionDescStat" class="optionDesc">0</label>
                             </div>
 
                             <div class="options">
@@ -84,33 +82,32 @@ function postText() {
                    </div>
     `;
 
-    postSection.innerHTML = postDiv+postSection.innerHTML;
-    inputPost.value = "";
-    console.log(inputPost.value);
-    console.log(postButton);
-    console.log(userPost);
-    console.log(postDiv);
-
-    imageContainer.innerHTML = ''; // Limpa o container antes de adicionar novas imagens
-    let postDivImage = document.getElementById("postDivImage")
-    for(i=0; i<srcArray.length;i++){
-        var postImgUrl = srcArray[i];
-        var postImg = `<img class="imagePost" src="${postImgUrl}">`;
-
-        // Adiciona a imagem ao container
-        postDivImage.innerHTML = postDivImage.innerHTML+postImg;
+    if(inputPost.value == ""){
+        alert("Please type something before post")
+    } else {
+        postSection.innerHTML = postDiv+postSection.innerHTML;
+        inputPost.value = "";
+        imageContainer.innerHTML = ''; // Limpa o container antes de adicionar novas imagens
+        let postDivImage = document.getElementById("postDivImage")
+        for(i=0; i<srcArray.length;i++){
+            postDivImage.style.display = "block";
+            var postImgUrl = srcArray[i];
+            var postImg = `<img class="imagePost" src="${postImgUrl}">`;
+    
+            // Adiciona a imagem ao container
+            postDivImage.innerHTML = postDivImage.innerHTML+postImg;
+        }
+        srcArray = []
     }
-
-    srcArray = []
 }
+
+
 
 
 document.getElementById('imgUpIcon').addEventListener('click', function(e) {
     e.preventDefault(); // Previne o comportamento padrão da imagem
     document.getElementById('imageInput').click(); // Aciona o evento de clique do input oculto
 });
-
-
     // Cria um array para guardar as src(urls)
     var srcArray = [];
 
@@ -121,7 +118,6 @@ document.getElementById('imageInput').addEventListener('change', function(e) {
 
     // Obtém o elemento de container para as imagens
     var container = document.getElementById('imageContainer');
-
 
     // Itera sobre os arquivos selecionados
     for (var i = 0; i < files.length; i++) {
@@ -134,9 +130,9 @@ document.getElementById('imageInput').addEventListener('change', function(e) {
         var img = document.createElement('img');
         img.src = url;
         img.style.width = '30%'; // Define a largura da imagem
-        img.style.height = 'auto'; // Mantém a proporção da imagem
-        img.style.flexGrow = '1'; 
+        img.style.flexGrow = '0'; 
         img.style.objectFit = 'cover';
+        img.style.padding = "10px";
 
         // Adiciona a imagem ao container
         container.appendChild(img);
@@ -145,5 +141,12 @@ document.getElementById('imageInput').addEventListener('change', function(e) {
 
     // Opcional: Limpa o input após a seleção para permitir uma nova seleção
     e.target.value = '';
-    
+});
+
+document.getElementById('inputPost').addEventListener('keydown', function(event) {
+    // Verifica se a tecla pressionada foi Enter
+    if (event.key === 'Enter') {
+        // Aciona o botão programaticamente
+        document.getElementById('postButton').click();
+    }
 });
